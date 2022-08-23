@@ -1,0 +1,834 @@
+/* Directorio */
+/*  1.- GENERAL
+/*  2.- CONTACTOS
+/*  3.- UBICACION Y ETIQUETAS
+/*  X.- AGENDA
+
+********** 1.- GENERAL */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    nav {
+        font-size: 1.5em;
+        background-color: rgb(226, 226, 226);
+        
+    }
+/* jjj */
+    h1{
+        color: rgb(7, 102, 180);
+        padding: 20px;
+    } 
+
+    .contGral{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+ /* Estilos del filtro ******************************** */
+
+    .filterProperties{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+
+
+    .fliterFeatures{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 200px;
+        border: 2px solid black;
+    }
+
+
+
+    .filterProperties select{
+        font-size: 25px;
+        width: 300px;
+        height: 80px; 
+        text-align: center;
+    }
+
+    .filterFeaturesF{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+/*  2.- CONTACTOS  */
+
+
+    /* Encabezado  */
+
+        .titleHeader {
+           display:flex;
+           flex-direction: column;
+           width: 90%; 
+        }
+
+
+        .altaContactos{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+
+        .sectionTitle{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* .contactInput{
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+        } */
+
+/* 3.- UBICACION Y ETIQUETAS *****************************  */
+
+    .tarjeCont{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 220px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+
+    .filterLocation{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 220px;
+        border: 2px solid black; 
+    }
+
+    .filter-ubiaction{
+        display: flex;
+        flex-direction: column;
+        width: 57%;
+        height: 220px;
+        border: 2px solid black; 
+    }
+
+    .filter-stage{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 220px;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 18px;
+        /* margin: 10px, 10px; */
+        color: rgb(24, 143, 8);
+        border: 2px solid black; 
+    }
+
+    .filter-tags{
+        display: flex;
+        flex-direction: row;
+        width: 37%;
+        height: 220px;
+        align-items: center;
+        font-size: 22px;
+        justify-content: space-evenly;
+        color: rgb(24, 143, 8);
+        border: 2px solid black; 
+    }
+
+    .filter-tags label{
+        padding-right: 25px;
+    }
+
+    .filterLocationOne{
+        display:flex;
+        flex-direction: row;
+        height: 40px;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 30px;
+        color: rgb(24, 143, 8);
+        /* padding:10px; */
+        /* border: 2px solid black; */
+    }
+
+    .labelsProperty{
+        display:flex;
+        flex-direction: row;
+        padding:15px;
+        margin: 15px;
+        width: 100%;
+        height: 60px;
+        justify-content: space-evenly;
+        align-items: center;
+        /* color: rgb(28, 8, 143); */
+        border: 2px solid black;
+        font-size: 25px;
+        /* padding-left: 20px; */
+        /* margin-left: 200px; */
+    }
+
+
+/* *********************** */
+
+input.labelsProperty{
+    padding: 30px;
+    color: black;
+}
+
+.desFind{
+    display: flex;
+    flex-direction: column;
+}
+
+.desFind p{
+    font-size: 35px;
+}
+
+button.btnFind{
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+}
+
+.clearFind{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    color: #fff;
+    align-items: center;
+}
+
+/* Estilos de tarjetas de propiedades *************************** */
+.contCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    /* background: url(./mediaSend/logo\ MatchHome.png);
+    background-size: 15%; */
+}
+
+.card{
+    width: 375px;
+    height: 500px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+  .features{
+    width: 90%;
+    max-height: 240px;
+    margin-top: 20px;
+  }
+
+    .card img{
+        max-width: 100%;    
+        height: 240px;
+        padding: 2 0 2 0px;
+        align-items: stretch;
+    }
+    
+      .edit {
+            color: blue;
+        }
+        
+        .delete {
+            color: red;
+        }
+    
+        .irLink {
+            color: purple;
+        }
+
+        .iconContent{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            cursor: pointer;
+            padding-bottom: 10px;
+        }
+
+        i{
+            width: 100px;
+        }
+
+ /* 4.- PROPIEDAD SELECCIONADA *****************************  */   
+
+    .selectProduct{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        justify-content: start;
+        border: 1px solid rgb(218, 216, 216);
+        border-radius:5px;
+        margin-left: 100px;
+        padding: 5px;  
+    }
+
+    .selectImage {
+        /* flex-direction: row; */
+        width: 100%;    
+        height: 500px;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid rgb(187, 21, 21); */
+    }
+    
+    .selectProduct img{
+        width: 100%;
+        height: 450px;
+        align-items: stretch;
+    }
+
+    .descSelect{
+        width: 100%;
+        height: 500px;
+        /* border: 5px solid rgb(39, 44, 114); */
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    .folowLink{
+        justify-content: center;
+        padding: 10px;
+
+    }
+
+    .folowLink a{
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        padding: 7px;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+
+    .optionSend button{
+        width: 20px;
+        height: 10px;
+    }
+
+    
+/* TARJETA PARA MOSTRAR CONTACTOS  */
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    overflow-wrap: wrap;
+
+}
+.contactCard {
+    /* display: flex; */
+    /* flex-direction: row; */
+    width: 450px;
+    height: auto;
+    border: 1px solid rgb(233, 233, 233);
+    margin: 5px;
+    padding: 10px;
+}
+
+.nameDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+
+.form-check{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* ========== HOME ========== */
+
+:root {
+    --clr-primary: #651fff;
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+  }
+  
+  /* * {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  body {
+    color: var(--clr-gray);
+    margin: 2rem;
+  }
+  
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 13rem);
+    justify-content: center; 
+  }
+  
+  .container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 1rem;
+  }
+   
+  .banner-img {
+    position: absolute;
+    background-image: url(https://images.unsplash.com/photo-1582727657635-c771002bdada?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  } 
+  
+  .profile-img {
+    width: 8rem;
+    clip-path: circle(70px at center);
+    margin-top: 1.5rem;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  button.btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+    align-items: bottom;
+  }
+
+/*   
+.container-home {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;s
+    margin: 1rem;
+  } */
+
+  .show-home {
+    display: grid;
+    grid-template-columns: no-repeat;
+    justify-content: center; 
+  }
+
+  .cont-home{
+    justify-content: baseline;
+  }
+
+  
+    .schedule {
+        /* width: 550px; */
+        color: #651fff;
+        font-size: 1.4rem;
+        text-align: left
+        ;
+    }
+
+    .schedule-h1 {
+        justify-content: center;
+    }
+
+
+/*  *- ABOUT *************************************/ 
+* {
+    box-sizing: border-box;
+}
+
+#query-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+/* General Structure */
+main#bookshelf {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center; 
+}
+/*  *- FIN ABOUT */
+
+/* *- BOOK */
+.book { 
+    width: 280px;
+    border: 4px solid #BA5626; 
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 black;
+    margin: 5px;
+    background-color: #e4ddcf;
+}
+
+.book-top-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid #BA5626;
+}
+
+/* Book Layout */
+.bkcont {
+    width: 100%;
+    text-align: center;
+}
+
+.bkcover {
+    width: 95%;
+    height: 150px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 3px gray;
+}
+
+div.language {
+    font-size: .8em;
+    margin: 5px 0;
+}
+
+figcaption {
+    text-align: center;
+    width: 90%;
+    padding: 3px 10px;
+    height: 36px;
+    font-weight: bold;
+}
+
+
+/* Book Links Layout */
+a { cursor: pointer; }
+
+.book-bottom-links {
+width: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: center;  
+}
+
+.available-at {
+width: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+/*   background-color: #fff; */
+}
+
+.available-at header { 
+text-align: center;
+}
+.available-at header h5 { 
+font-size: .95rem;
+margin: 15px 0;
+padding: 0 .2rem;
+}
+
+.from-pariyatti {
+height: 200px;
+}
+
+.other-vendors {
+border-left: 3px solid #BA5626;
+height: 200px;
+}
+
+.buy-options-cont {
+text-align: center;
+padding: 0 10px 10px;
+
+}
+
+.vender-logo {
+width: 100px;
+margin: 10px 0 0 0;
+}
+
+.p-book-btn {
+border: none;
+width: 100px;
+background: #BA5626;
+font-weight: 400;
+font-size: 12px;
+color: #f3f1ea;
+text-transform: uppercase;
+line-height: 130%;
+cursor: pointer;
+margin-top: .8em;
+padding: 9px 14px;
+box-shadow: 1px 1px 1px black;
+transition: .3s all;
+}
+
+.p-book-btn:hover {
+background-color: #D0A45A;
+color: #000;
+}
+
+.p-book-btn:active {
+box-shadow: inset 0 0 1px black;
+}
+/* *- FIN BOOK */
+
+/* *- SEARCH */
+#search-input-cont {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+#search-field {
+    width: 100%;
+    font-size: 1.3rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 10px 0;
+}
+/* FIN SEARCH */
+
+/* *- MENU */
+
+.menu-cont {
+    width: 40%;
+    display: flex;
+    margin: 0 10px 0 0;
+}
+
+select {
+    margin: 0;
+    font-size: 1.18rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.menu {
+    width: 100%
+}
+/* FIN MENU */
+
+/* *- NO RESULTS */
+	/* section {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	 */
+	.no-results-msg {
+		width: 70%;
+		padding: 20px;
+		font-size: 2rem;
+		text-align: center;
+		background-color: hsl(19, 66%, 74%);
+		border-left: 6px solid #BA5626;
+	}
+
+
+/*                     BOTONES E INPUTS                       */
+
+        .btnCommon {
+            width: 250px;
+            height:40px;
+            color: rgb(245, 232, 209);
+            background: blue;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .btnWhatsApp{         
+            background: green;
+        }
+
+        .btnCancel{
+            color:black;
+            background: yellow;
+        }
+
+        .texArea{ 
+            width:800px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .input-number{
+            width: 200px;
+            height: 30px;
+            background-color: #eff2f3;
+
+        }
+
+
+
+/* *- BITACORA */
+
+    .binnacleHome{
+        width: 1200px;
+        color: #651fff;
+        font-size: 1.2rem;
+    }
+
+    .int-binnacle{
+        display: flex;
+        align-items: center;
+    }
+    
+    .date-binnacle {   
+        width: 240px;
+        font-size: 20px;
+        /* margin: 5px; */
+        /* padding: 5px; */
+    } 
+    
+    .com-binnacle {
+        width: 1300px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+/* *- TODOS */
+    .complete {
+        text-decoration: line-through;
+    }
+
+    .error {
+        color: red;
+    }
+
+/* * - AGENDA */
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+
+    }
+
+    .pop-up {
+        position: fixed;
+        height: auto;
+        width: 550px;
+        color: white;
+        padding: 15px;
+        background-color: #37474f;
+        border: solid 5px;
+        z-index: 5;
+	    align-items: center;
+    }
+
+	
+	.inputTask {
+        font-size: 25px;
+		width: 550px;
+        height: 50px;
+        margin-bottom: 10px;
+
+	}
+
+    .inputDate {
+        font-size: 30px;
+        padding: 25px;
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .sched-container{       
+        padding: 20px;
+        margin: 10px;
+        justify-content: center;
+        background-color: #b0bec5;
+        border-radius: 15px;
+    }
+
+    .sched-btn {
+        height: 40px;
+        width: 250px;
+        color: antiquewhite;
+        background-color: blue;
+    }
+
+    .sched-note {     
+        font-size: 20px;
+    }
+
+
+
+
+/*  X.- HOME ******************************************** */
+
+/* Contacto Seleccionado */
+.propMost{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/* .imgPropContSelect{
+    width: 100%;
+    height: 300px;
+}
+
+.imgPropToShow{
+    height: 100%;
+    margin: auto;
+    display: block;
+} */
